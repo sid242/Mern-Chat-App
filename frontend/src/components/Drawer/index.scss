@@ -1,0 +1,11 @@
+.drawer-header {
+  position: sticky;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  min-height: 64px;
+  top: 0;
+  margin: 0 !important;
+  z-index: 1;
+  border-bottom: 1px solid #cacaca;
+}

@@ -1,0 +1,50 @@
+.form-control {
+  position: relative;
+  label {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 3px;
+    .required {
+      color: red;
+    }
+  }
+  input {
+    outline: none;
+    background: var(--light-bg);
+    border-radius: 12px;
+    height: 48px;
+    width: 100%;
+    padding: 12px 24px;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    &.border-danger {
+      border: 1px solid red !important;
+    }
+    &:focus {
+      border: 1px solid var(--primary-color);
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  .error-message {
+    position: absolute;
+    top: 100%;
+    font-size: 12px;
+    &.text-danger {
+      color: red;
+    }
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="file"] {
+  padding: 9px 24px 12px;
+}
